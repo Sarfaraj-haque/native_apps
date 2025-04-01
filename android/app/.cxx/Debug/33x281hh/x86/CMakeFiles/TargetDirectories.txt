@@ -1,0 +1,2 @@
+C:/Users/Alexm/StudioProjects/native_apps/android/app/.cxx/Debug/33x281hh/x86/CMakeFiles/edit_cache.dir
+C:/Users/Alexm/StudioProjects/native_apps/android/app/.cxx/Debug/33x281hh/x86/CMakeFiles/rebuild_cache.dir
