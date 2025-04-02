@@ -16,6 +16,9 @@ class PlaceList extends StatelessWidget {
     }
     return ListView.builder(
         itemBuilder: (context, index) => ListTile(
+              leading: CircleAvatar(radius: 26,
+                backgroundImage: FileImage(places[index].image),
+              ),
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute(

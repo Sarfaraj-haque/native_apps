@@ -1,9 +1,11 @@
+
 import 'package:flutter/material.dart';
 
 import '../model/place.dart';
 
 class PlacesDetails extends StatelessWidget {
-  const PlacesDetails({super.key,required this.place});
+  const PlacesDetails({super.key, required this.place});
+
   final Place place;
 
   @override
@@ -12,8 +14,15 @@ class PlacesDetails extends StatelessWidget {
       appBar: AppBar(
         title: Text(place.title),
       ),
-      body: Center(
-        child: Text("No Data Found"),
+      body: Stack(
+        children: [
+          Image.file(
+            place.image,
+            height: double.infinity,
+            width: double.infinity,
+            fit: BoxFit.cover,
+          ),
+        ],
       ),
     );
   }
