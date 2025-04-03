@@ -38,7 +38,7 @@ class _LocationInputState extends State<LocationInput> {
     });
 
     locationData = await location.getLocation();
-    final url=Uri.parse('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY');
+    final  url=Uri.parse('https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=YOUR_API_KEY');
     setState(() {
       isGettingLocation = false;
     });
@@ -75,7 +75,7 @@ class _LocationInputState extends State<LocationInput> {
             TextButton.icon(
               onPressed: _gettingLocation,
               icon: Icon(Icons.location_on),
-              label: Text("Get Current Location"),
+              label: Text("Get Location Location"),
             ),
             TextButton.icon(
               onPressed: () {},
